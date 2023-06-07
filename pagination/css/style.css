@@ -1,0 +1,206 @@
+:root{
+    --light-gray:#2C3333;
+    --light-blue:#0092CA;
+    --mad-cement:#3C4048;
+    --thin-skyblue:#5F9DF7;
+    --milky-white:#FAEDF0;
+    --box-shadow:#b3a9a7b2;
+}
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*{
+    transition: all .3s linear;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+img{
+    display: block;
+}
+.wraper{
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*padding left right*/
+.padding-lr-mobile-twenty{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.pagination-container{
+    width:100%;
+    background-color: #F7F7F7;
+}
+.pagination-section{
+    margin-top: 40px;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 50px;
+}
+.pagination-heading{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.heading{
+    font-size: 40px;
+    text-align: center;
+    text-transform: capitalize;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+    color: var(--light-gray);
+}
+.underline{
+    width:40%;
+    height: 4px;
+    background-color: var(--light-blue);
+}
+.page-section{
+    width:100%;
+}
+.single-profile{
+    width:100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    box-shadow: 0px 0px 50px var(--box-shadow);
+    background-color: white;
+}
+.single-profile:hover{
+    transform: translateY(-5px);
+    transition: all 3s linear;
+}
+.profile-img-container{
+    margin-top: 30px;
+    width:100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-component{
+    width:150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.img-component img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+.profile-name{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile-name .name{
+    font-size: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: var(--mad-cement);
+}
+.profile-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile-button a{
+    background-color: var(--thin-skyblue);
+    padding: 10px 15px 10px 15px;
+    font-size: 19px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--milky-white);
+    margin-bottom: 30px;
+}
+.three-column-layout{
+    display: grid;
+    grid-template-rows: repeat(1,1fr);
+    column-gap:50px;
+    row-gap: 50px;
+}
+.page-navigation-container{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 15px;
+    row-gap: 25px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.page-number{
+    padding: 5px 8px 5px 8px;
+    font-size: 25px;
+    font-weight: bold;
+    border: 1px black solid;
+    color: var(--light-gray);
+}
+.page-number:hover{
+    border: none;;
+    background-color: var(--thin-skyblue);
+    color: var(--light-gray);
+    transition: all .3s linear;
+}
+.nav-buuton{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 5px 8px 5px 8px;
+    background-color: var(--thin-skyblue);
+}
+@media screen  and (min-width:750px){
+    .three-column-layout{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap:50px;
+    row-gap: 50px;
+}
+.underline{
+    width:15%;
+}
+}
+@media screen and (min-width:992px) {
+    .three-column-layout{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap:50px;
+    row-gap: 50px;
+}
+.heading{
+    font-size: 45px;
+}
+.underline{
+    width:15%;
+}
+.img-component{
+    width:250px;
+    height: 250px;
+    overflow: hidden;
+}
+}

@@ -1,0 +1,309 @@
+:root{
+    --gray-black:#102a42;
+    --light-blue:#6ebef7;
+    --sky-blue:#2d87c8;
+    --white:white;
+    --bg-gray:#E4E4E4;
+}
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    display: block;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--white) !important;
+}
+.wraper{
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*padding left right mobile*/
+.padding-lr-mobile-twenty{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.padding-buttom-thirty-desktop{
+    padding-bottom: 30px;
+}
+/* active list */
+.active-list:visited{
+    background-color: var(--light-blue);
+    color: var(--white);
+}
+.hotel-menu-container{
+    width:100%;
+}
+.hotel-menu-center{
+    width:100%;
+}
+.hotel-menu-section{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 50px;
+}
+.hotel-menu-heading{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s linear;
+}
+.visible{
+    visibility:visible;
+}
+.heading{
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: capitalize;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+    color: var(--gray-black);
+}
+.underline{
+    width: 50%;
+    height: 5px;
+    background-color: var(--light-blue);
+    transition: all 0.2s linear;
+}
+.hotel-menu-main{
+    width:100%;
+    min-height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s linear;
+}
+.hotel-menu-lists{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 25px;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s linear;
+}
+.hotel-menu-list{
+    font-size: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    color: var(--sky-blue);
+    border: 2px  var(--light-blue) solid;
+    padding: 5px 5px 5px 5px;
+    background-color: var(--white);
+    border-radius: 9%;
+    
+}
+.hotel-menu-list:hover{
+    background-color: var(--light-blue);
+    color:var(--white);
+    transition: all .3s linear;
+}
+.hotel-menu{
+    width:100%;
+}
+.two-column-layout{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    column-gap: 30px;
+    row-gap: 50px;
+}
+.single-menu{
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    row-gap: 15px;
+    box-shadow: 0px 0px 50px  rgb(177, 206, 240);
+    background-color: white !important;
+    border-radius: 20px;
+}
+.menu-img-container{
+    width:100%;
+    height: 100%;
+}
+.img-component{
+    aspect-ratio: 350/300;
+    overflow: hidden;
+    border: 5px var(--sky-blue) solid;
+    border-radius: 2%;
+}
+.img-component img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.img-component img:hover{
+    transform: scale(1.1);
+    transition: all .2s linear;
+}
+.menu-title-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.menu-title{
+    padding-bottom:10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom:2px var(--light-blue)  dotted;
+}
+.title{
+    font-size: 16px;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--gray-black);
+    word-spacing: 2px;
+    letter-spacing: 2px;
+}
+.price{
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: capitalize;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+    color: var(--light-blue);
+}
+.menu-details{
+    width:100%;
+    margin-top: 20px;
+}
+.desc{
+    height: 100%;
+    font-size: 16px;
+    white-space: 0px;
+    text-align: justify;
+    text-transform: capitalize;
+    word-spacing: 0px;
+    letter-spacing: 0px;
+    line-height: 1.6;
+    color: var(--gray-black);
+}
+.single-menu:hover{
+    transform: translateY(-5px) scale(0.98);
+    box-shadow: 0px 5px 3px rgb(131, 169, 212);
+    transition: transform .3s linear,box-shadow .3s linear;
+}
+@media screen and (min-width:550px) { 
+    /*padding buttom */
+    .padding-buttom-fifty-desktop{
+        padding-bottom: 50px;
+    }
+    .two-column-layout{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        column-gap: 30px;
+        row-gap: 50px;
+    }
+    .hotel-menu-lists{
+        display: flex;
+        column-gap: 25px;
+        transition: all .3s linear;
+    }
+    .single-menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: baseline;
+        column-gap: 20px;
+    }
+    .menu-img-container{
+        width:100%;
+        height: 100%;
+    }
+    .img-component{
+        aspect-ratio: 1085/800;
+        overflow: hidden;
+    }
+    .img-component img{
+        width:100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+@media screen and (min-width:992px) {
+    /*padding buttom */
+    .padding-buttom-fifty-desktop{
+        padding-bottom: 50px;
+    }
+    .two-column-layout{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 30px;
+        row-gap: 50px;
+    }
+    .padding-lr-desktop-fourty{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .hotel-menu-container{
+        width:100%;
+    }
+    .heading{
+        font-size: 45px;
+    }
+    .hotel-menu-lists{
+        display: flex;
+        column-gap: 30px;
+        transition: all .3s linear;
+    }
+    .hotel-menu-list{
+        font-size: 25px;
+    }
+    .single-menu{
+        width:100%;
+        display: flex;
+        justify-content: baseline;
+        flex-direction: row;
+        column-gap: 20px;
+    }
+    .menu-img-container{
+        width:100%;
+        height: 100%;
+    }
+    .img-component{
+        aspect-ratio: 1080/900;
+        overflow: hidden;
+    }
+    .img-component img{
+        width:100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    .menu-title{
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    .title{
+        font-size: 20px;
+        line-height: 1.2;
+    }
+    .menu-details{
+        width:100%;
+        
+    }
+
+}

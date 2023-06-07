@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loaders</title>
+    <style>
+        :root{
+            --light-blue:rgba(0, 130, 255, 0.78);
+            --white:rgb(236, 228, 228);
+            --light-purple:rgba(110, 0, 255, 0.77);
+            --wood-brown:#752201;
+            --sky-blue:#cfe8f7;
+            --ocean-blue:#58d0ff;
+            --ocean-blue-opacity:#95daf3ef;
+        }
+        *,::after,::before{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        *{
+            transform: scale(0.98);
+            transition: all .2s linear;
+        }
+        ul{
+            list-style-type: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        img{
+            display: block;
+        }
+        body{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .wraper{
+            max-width: 1250px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .padding-left-right-twenty-mobile{
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .padding-top-buttom-thirty-mobile{
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        .loader-container{
+            width:100%;
+        }
+        .loader-heading-section{
+            width:100%;
+        }
+        .heading{
+            margin-top: 50px;
+            text-align: center;
+            text-transform: capitalize;
+            letter-spacing: 2px;
+            word-spacing: 2px;
+            font-size: 35px;
+            color: var(--light-blue);
+            font-weight: bold;
+        }
+        .loader-section{
+            width:100%;
+            margin-top: 50px;
+        }
+        .loader-article{
+            width:100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            box-shadow: 0px 0px  20px 2px black;
+        }
+        .circle-loader{
+            width:50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 10px solid var(--white);
+            border-top: 10px solid var(--light-blue);
+            animation: circle-Animation 3s linear  infinite;
+            transition: all .3s linear;
+
+        }
+        @keyframes circle-Animation {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(365deg);
+            }
+        }
+        .title{
+            text-align: center;
+            margin-top:30px ;
+            text-transform: capitalize;
+            letter-spacing: 2px;
+            word-spacing: 2px;
+            color: var(--wood-brown);
+            font-size: 25px;
+        }
+        .three-column-layout{
+            display: grid;
+            grid-template-columns: 1fr;
+            row-gap: 40px;
+            column-gap: 40px;
+        }
+        .bidirectional-loader{
+            width:50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 10px solid rgb(235, 235, 235);
+            border-top: 10px solid var(--light-blue);
+            border-bottom: 10px solid var(--light-blue);
+            animation: circle-Animation 3s linear  infinite;
+            transition: all .3s linear;
+        }
+        .light-wrap-loader{
+            width:50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 10px solid var(--white);
+            border-top:10px solid var(--ocean-blue) ;
+            border-left: 10px solid  var(--ocean-blue-opacity);
+            animation: circle-Animation .6s linear  infinite;
+            transition: all .3s linear;
+        }
+        .spring-loader{
+            width:50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 10px solid var(--white);
+            animation: spring-animantion .9s  linear infinite;
+            transition: all .3s linear;
+        }
+        @keyframes spring-animantion {
+            0%{
+                transform: rotate(0deg);
+                border-top: 10px solid var(--wood-brown) ;
+                border-right-color: transparent;
+                transition: all 3s linear;
+                
+            }
+            75%{
+                transform: rotate(90deg);
+                border-right: 10px solid var(--wood-brown);
+                border-top-color: transparent;
+            }
+        }
+        .outer-border{
+            width:50px;
+            height: 50px;
+            border:6px rgb(0, 162, 255) solid;
+            border-radius: 50%;
+            padding-top: 4px;
+            animation: orbit-loader 3s linear  infinite;
+            transition: all .3s linear;
+            
+        }
+        .rotate-loader{
+            margin: auto;
+            width:10px;
+            height: 10px;
+            border:5px rgb(0, 162, 255) solid;
+            border-radius:20px;
+            padding-bottom: 10px;
+            
+        }
+        @keyframes orbit-loader {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(365deg);
+            }
+        }
+        .outer-bounce{
+            display: flex;
+            column-gap: 3px;
+            
+        }
+        .bounce-loader{
+            width: 20px;
+            height: 20px;
+            border-radius: 50px;
+            background-color: rgb(0, 162, 255);
+        }
+        .one-loader{
+            animation: bounce-loader-one 2s linear  infinite ;
+            transition: all 3s linear;
+        }
+        @keyframes bounce-loader-one{
+            0%{
+                transform: translateY(-5px);
+            }
+            25%{
+                transform: translateY(-3px);
+            }
+            50%{
+                transform: translateY(-1px);
+            }
+            65%{
+                transform: translateY(1px);
+            }
+            85%{
+                transform: translateY(3px);
+            }
+            100%{
+                transform: translateY(5px);
+            }
+
+        }
+        .two-loader{
+            animation: bounce-loader-two 2s linear  infinite;
+            transition: all .3s linear;
+            
+        }
+        @keyframes bounce-loader-two{
+            0%{
+                transform: translateY(5px);
+            }
+            25%{
+                transform: translateY(3px);
+            }
+            50%{
+                transform: translateY(1px);
+            }
+            65%{
+                transform: translateY(-1px);
+            }
+            85%{
+                transform: translateY(-3px);
+            }
+            100%{
+                transform: translateY(-5px);
+            }
+
+        }
+        .outer-battery{
+            width:150px;
+            height:50px;
+            border: 5px red solid;
+        }
+        .battery-loader{
+            width: 5%;
+            height: 40px;
+            background-color: rgb(0, 162, 255);
+            animation: battery-full-filler 2s linear  infinite;
+            transition: all .3s linear;
+        }
+        @keyframes battery-full-filler {
+            0%{
+                width: 20%;
+            }
+            25%{
+                width: 40%;
+            }
+            50%{
+                width:70%;
+            }
+            75%{
+                width:85%;
+            }
+            100%{
+                width:100%;
+            }
+        }
+        @media screen  and (min-width:800px){
+            *{
+                transform:scale(1);
+                transition: all .2s linear;
+            }
+            .three-column-layout{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                column-gap: 40px;
+                row-gap: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!--Loader container start-->
+    <div class="loader-container">
+        <div class="loader-center wraper">
+            <!-- Loader heading-->
+            <div class="loader-heading-section padding-left-right-twenty-mobile ">
+                <h2 class="heading">different types of loaders</h2>
+            </div>
+            <section class="loader-section  three-column-layout padding-top-buttom-thirty-mobile padding-left-right-twenty-mobile">
+                <!--loader-section start-->
+                <article class="loader-article  padding-top-buttom-thirty-mobile padding-left-right-twenty-mobile">
+                    <div class="circle-loader"></div>
+                    <h4 class="title">normal loader</h4>
+                </article>
+                <!--loader-section end-->
+                <!--loader-section start-->
+                <article class="loader-article  padding-top-buttom-thirty-mobile padding-left-right-twenty-mobile">
+                    <div class="bidirectional-loader"></div>
+                    <h4 class="title">bi-directional loader</h4>
+                </article>
+                <!--loader-section end-->
+                <!--loader-section start-->
+                <article class="loader-article  padding-top-buttom-thirty-mobile padding-left-right-twenty-mobile">
+                    <div class="light-wrap-loader"></div>
+                    <h4 class="title">light wrap loader</h4>
+                </article>
+                <!--loader-section end-->
+                <!--loader-section start-->
+                <article class="loader-article  padding-top-buttom-thirty-mobile padding-left-right-twenty-mobile">
+                    <div class="spring-loader"></div>
+                    <h4 class="title">spring loader</h4>
+                </article>
+                <!--loader-section end-->
+                <!--loader-section start-->
+                <article class="loader-article  padding-top-buttom-thirty-mobile padding-left-right-twenty-mobile">
+                    <div class="outer-border">
+                        <div class="rotate-loader"></div>
+                    </div>
+                    <h4 class="title">orbit loader</h4>
+                </article>
+                <!--loader-section end-->
+                <!--loader-section start-->
+                <article class="loader-article  padding-top-buttom-thirty-mobile padding-left-right-twenty-mobile">
+                    <div class="outer-bounce">
+                        <div class="bounce-loader one-loader"></div>
+                        <div class="bounce-loader two-loader"></div>
+                        <div class="bounce-loader one-loader"></div>
+                        <div class="bounce-loader two-loader"></div>
+                    </div>
+                    <h4 class="title">bounce loader</h4>
+                </article>
+                <!--loader-section end-->
+                <!--loader-section start-->
+                <article class="loader-article  padding-top-buttom-thirty-mobile padding-left-right-twenty-mobile">
+                    <div class="outer-battery">
+                        <div class="battery-loader"></div>
+                    </div>
+                    <h4 class="title">battery Charging</h4>
+                </article>
+                <!--loader-section end-->
+            </section>
+        </div>
+    </div>
+    <!--Loader container end-->
+</body>
+</html>

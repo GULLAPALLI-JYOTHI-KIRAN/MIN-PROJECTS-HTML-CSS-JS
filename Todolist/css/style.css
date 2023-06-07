@@ -1,0 +1,218 @@
+:root{
+    --light-black-smoke:#2C3639;
+    --light-black:#1f201f;
+    --light-purple:#a45fbe;
+    --bg-color:#d1f5f2;
+    --red:red;
+    --white:white;
+}
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*{
+    transition: all .3s linear;
+}
+*:focus{
+    outline: 4px var(--white) solid;
+} 
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+html{
+    background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+img{
+    display: block;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.margin-mobile{
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.padding-left-right-mobile-twenty{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.todo-list-section{
+    width: 100%;
+    height: 100%;
+}
+.list-section{
+    background-color: #F4D03F;
+    background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
+    box-shadow: 1px 2px 7px 14px rgba(12, 12, 12, 0.884);
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    transform: scale(0.9);
+    padding-bottom: 30px;
+}
+.todo-list-heading .title{
+    font-family: 'Sono', sans-serif;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    letter-spacing: 0.3rem;
+    line-height: 1.1;
+    color:var(--light-black-smoke) ;
+}
+.todo-list-note{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    justify-content: space-between;
+}
+.todo-list{
+    width:100%;
+    padding:10px;
+    border: none;
+    border-radius: 3px;
+    outline-color:var(--white);
+    font-size:1.5rem;
+    background-color: var(--light-black);
+    color: var(--white);
+    border-radius: 10px;
+}
+.todo-list::placeholder{
+    font-size: 1.2rem;
+    color: var(--white);
+}
+.inner-bg{
+    border: 4px var(--red) solid;
+    background-color: var(--white);
+    color: var(--light-black);
+}
+.display-bbtn{
+    display: none;
+}
+.primary-button{
+    cursor: pointer;
+    background: var(--light-purple);
+    padding: 5px 5px 5px 5px;
+    font-size: 0.9rem;
+    text-transform: capitalize;
+    color:var(--white);
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+}
+.primary-button:active{
+    transform: scale(0.92);
+    transition: all .3s linear;
+}
+.note-list-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 25px;
+    margin-bottom: 20px;
+}
+.index-mask{
+    z-index: -1;
+}
+.pop-chlid-bg-color{
+    background-color: var(--red);
+}
+.list{
+    border-radius: 10px;
+    padding: 10px;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    min-height: 45px;
+    background-color: var(--light-black);
+}
+.note{
+    font-size: 1.5rem;
+    color:var(--white);
+    text-transform: capitalize;
+    text-align:justify
+}
+.list-edit-del-section{
+    justify-self: baseline;
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+    align-items: baseline;
+    
+}
+.list-edit-del-section .fa-pen-to-square{
+    color: green;
+    cursor: pointer;
+}
+.list-edit-del-section .fa-pen-to-square:hover{
+    color: var(--white);
+    transition: all .3s linear;
+}
+.list-edit-del-section .fa-trash-can{
+    cursor: pointer;
+    color:var(--red);
+}
+.list-edit-del-section .fa-trash-can:hover{
+    color: var(--white);
+    transition: all .3s linear;
+}
+.clear-button{
+    border-radius: 6px;
+    width: 100%;
+    padding: 10px 20px 10px 20px;
+    font-size: 1.4rem;
+    background-color:var(--light-purple);
+    color:var(--white);
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 0.5rem;
+    border: none;
+    cursor: pointer;
+}
+.clear-button:hover{
+    background-color: var(--light-black);
+    color: var(--white);
+    transition: all .3s linear;
+}
+.clear-button:active{
+    transform: scale(0.92);
+    transition: all .3s linear;
+}
+@media screen and (min-width:800px) {
+    .wraper{
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .padding-left-right-desktop-fifty{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .todo-list-heading{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .todo-list-heading .title{
+        font-size: 2.2rem;
+    }
+    .list{
+        min-height: 35px;
+    }
+    .note{
+        font-size: 1.3rem;
+        text-align: justify;
+    }
+}

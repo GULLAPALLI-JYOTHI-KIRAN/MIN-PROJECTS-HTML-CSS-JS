@@ -1,0 +1,219 @@
+html{
+    font-size: 16px;
+}
+*,::after,::before{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Playfair Display', serif;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+img{
+    display: block;
+}
+.wraper{
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.dialog-box-container{
+    width:100%;
+    margin-bottom: 40px;
+}
+.dialog-box-heading-section{
+    width:100%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.title{
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    word-spacing: 0.3rem;
+    color: #00caff;
+    margin-bottom: 10px;
+}
+.underline{
+    height: 6px;
+    width:30%;
+    margin: auto;
+    background-color: #67f58a;
+    border-radius: 2px;
+}
+.dialog-box-section{
+    width:100%;
+}
+.padding-left-right-twenty-mobile{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.each-place{
+    margin-top: 30px;
+    width:100%;
+    border:3px green solid;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    border-radius: 15px;
+}
+.place-title{
+    width:100%;
+    margin-bottom: 10px;
+}
+.place-title p{
+    text-align: center;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    word-spacing: 0.3rem;
+    letter-spacing: 0.1rem;
+    color: #091c22;
+}
+.img-component{
+    aspect-ratio: 250/200;
+    overflow: hidden;
+}
+.img-component img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.place-view-button{
+    margin-top: 15px;
+    width:100%;
+}
+.place-view-button p{
+    text-align: center;
+    text-transform: capitalize;
+    padding: 10px 20px 10px 20px;
+    border: 2px green solid;
+    color:green;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+    background-color: white;
+}
+.place-view-button p:hover{
+    border: none;
+    background-color: green;
+    color: white;
+    box-shadow: 2px 9px 24px 0px rgba(0,0,0,0.86);
+    transition: all .2s linear;
+}
+.place-view-button p:active{
+    transform: scale(0.9);
+    transition: all .3s linear;
+}
+.each-place:hover{
+    box-shadow: 2px 9px 24px 0px rgba(0,0,0,0.86);
+    transform: translateY(-5px);
+    transition: all 1s linear;
+}
+.each-place img:hover{
+    border-radius: 15px;
+    transform: scale(1.1);
+    transition: all .3s linear;
+}
+.padding-left-right-ten-mobile{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.padding-left-right-five-mobile{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.place-in-detail-info{
+    width: 100%;
+    position: absolute;
+    top:0px;
+    left:0px;
+    background-color: #fffaf2;
+    padding-bottom: 30px;
+    z-index: 1;
+    display: none;
+}
+.title-section{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content:baseline;
+    align-items: center;
+}
+.close-button{
+    cursor: pointer;
+}
+.place-in-detail-info .img-component{
+    aspect-ratio: 250/200;
+    overflow: hidden;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+.place-in-detail-info .img-component img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.place-desc{
+    text-align: justify;
+    text-transform: capitalize;
+    word-spacing: 0.2rem;
+    line-height: 1.5;
+    font-size: 1.3rem;
+    font-family: 'Poppins', sans-serif;
+}
+.three-coloumn-layout{
+    display: grid;
+    grid-template-rows: 1fr;
+    row-gap: 30px;
+}
+@media screen and (min-width:992px) {
+    .padding-left-right-twenty-desktop{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .three-coloumn-layout{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 25px;
+    }
+    .dialog-box-container{
+        margin-bottom: 50px;
+    }
+    .dialog-box-heading-section{
+        margin-top: 40px;
+    }
+    .title{
+        font-size: 2.5rem;
+    }
+    .underline{
+        height: 6px;
+        width:15%;
+    }
+    .place-title p{
+        font-size: 1.6rem;
+    }
+    .place-view-button p{
+        font-size: 1.5rem;
+    }
+    .each-place:hover{
+        transform: scale(1.05);
+        transition: all .3s linear;
+    }
+    .place-in-detail-info .img-component{
+        margin: auto auto 30px auto;
+        width: 500px;
+        height: 300px;
+    }
+
+}

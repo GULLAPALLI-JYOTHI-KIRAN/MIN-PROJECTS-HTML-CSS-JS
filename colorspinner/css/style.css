@@ -1,0 +1,213 @@
+:root{
+    --heading-brown:#BE8C63;
+    --basic-black:#3C4048;
+    --bg-light-black:#181818;
+    --white:#F2F2F2;
+    --nav-blue:#1363DF;
+    --light-blue:#548CFF
+}
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*{
+    transition: all .3s linear;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+img{
+    display: block;
+}
+/*padding left right*/
+.padding-lr-mobile-twenty{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.wraper{
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.color-spinner-nav-container{
+    width:100%;
+    background-color: var(--white);
+}
+.color-spinner-nav-section{
+    width: 100%;
+    min-height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.color-spinner-nav-section .heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heading .name{
+    font-size: 20px;
+    font-weight: bold;
+    color:var(--heading-brown) ;
+    text-align: center;
+    text-transform: capitalize;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+}
+.color-indicator{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 10px;
+}
+.color-indicator .indicator{
+    font-size: 18px;
+    color: var(--basic-black);
+    text-align: center;
+    font-weight: bold;
+    text-transform: capitalize;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+}
+.color-spinner-container{
+    width:100%;
+    min-height: 100vh;
+    background-color: #BE8C63;
+}
+.padding-top-buttom-mobile-fifty{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.color-spinner-center{
+    width:100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.color-spinner-section{
+    width:100%;
+    height: 100%;
+    display: flex;
+    row-gap: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+.bgcolor-type-container{
+    min-height: 80px;
+    background-color: var(--bg-light-black);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+    row-gap: 6px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.bgcolor-type{
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--white);
+    text-align: center;
+    text-transform: capitalize;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+}
+.bgcolor-code{
+    font-size: 35px;
+    text-align: center;
+    color: var(--light-blue);
+    word-spacing: 2px;
+    letter-spacing: 2px;
+}
+.spinner-container{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.spinner-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.spinner-button:active{
+    transform: scale(0.9);
+}
+.spinner-button button{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--bg-light-black);
+    word-spacing: 2px;
+    letter-spacing: 2px;
+    border:2px  var(--bg-light-black) solid;
+    padding:10px 20px 10px 20px;
+}
+.spinner-button button:hover{
+    color: var(--white);
+    background-color: var(--bg-light-black);
+    transition: all .4s linear;
+}
+@media screen  and (min-width:750px){
+    *{
+        transition: all .3s linear;
+    }
+    .color-spinner-nav-container{
+        width:100%;
+    }
+    .heading .name{
+        font-size: 30px;
+    }
+    .color-indicator{
+        display: flex;
+        column-gap: 20px;
+    }
+    .color-indicator .indicator{
+        font-size: 25px;
+    }
+    .color-spinner-container{
+        width: 100%;
+        height: 100%;
+    }
+    .color-spinner-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .bgcolor-type-container{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .bgcolor-type{
+        font-size: 40px;
+    }
+    .spinner-button a{
+        font-size: 30px;
+        color: var(--white);
+        background-color: var(--bg-light-black);
+    }
+    .padding-top-buttom-desktop-hundered{
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .spinner-button a:hover{
+    color: var(--bg-light-black);
+    background-color: transparent;
+    transition: all .4s linear;
+}
+}
