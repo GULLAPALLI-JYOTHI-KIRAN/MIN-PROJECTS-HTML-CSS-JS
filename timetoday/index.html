@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gullapalli Jyothi Kiran</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap&Roboto+Mono:wght@200&display=swap&&family=Tektur&display=swap"
+        rel="stylesheet" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- Heading  section start-->
+    <div class="heading-container wraper">
+        <h1 class="title">Digital Clock With Alarm Setter</h1>
+    </div>
+    <!-- Heading  section end-->
+    <!-- Time section start -->
+    <div class="time-container">
+        <div class="time-center wraper">
+            <div class="time-section">
+                <div class="time-img-component">
+                    <div class="person-component">
+                        <img width="56" height="56" src="https://img.icons8.com/android/56/running.png" alt="running"
+                            class="person" />
+                    </div>
+                    <div class="football-component">
+                        <img width="23" height="23" src="https://img.icons8.com/ios-filled/23/football2--v1.png"
+                            alt="football2--v1" class="football" />
+                    </div>
+                </div>
+                <div class="time-display-section">
+                    <div class="hours-section adjust-items">
+                        <h5 class="heading">Hours</h5>
+                        <h2 class="time-display hours">12 </h2>
+                    </div>
+                    <div class="minutes-section adjust-items">
+                        <h5 class="heading">Minutes</h5>
+                        <h2 class="time-display minutes">10</h2>
+                    </div>
+                    <div class="seconds-section adjust-items">
+                        <h5 class="heading">Seconds</h5>
+                        <h2 class="time-display seconds">12 <span>PM</span></h2>
+                    </div>
+                </div>
+                <div class="time-al-section">
+                    <select id="hours-set" required>
+                        <option value="" disabled>Hours</option>
+                    </select>
+                    <select id="minutes-set" required>
+                        <option value="" disabled>Minutes</option>
+                    </select>
+                    <select id="mor-eve-set" required>
+                        <option value="" disabled>AM-PM</option>
+                        <option value="AM">AM</option>
+                        <option value="PM">PM</option>
+                    </select>
+                </div>
+                <div class="todate-section">
+                    <h5>7/18/2023</h5>
+                </div>
+                <button class="primary-bbtn">Set Me</button>
+                <h2 class="remaining-time"></h2>
+            </div>
+        </div>
+    </div>
+    <!-- Time section start -->
+    <!-- javascript section start -->
+    <script src="./js/app.js"></script>
+    <!-- javascript section ends -->
+</body>
+
+</html>
