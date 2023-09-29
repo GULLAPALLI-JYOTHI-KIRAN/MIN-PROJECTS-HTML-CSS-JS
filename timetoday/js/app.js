@@ -22,7 +22,7 @@ let fullTime;
 let hh;
 let mm;
 let ss;
-let swift;
+var swift;
 function getCurrentTime(){
     const date=new Date();
     hh=date.getHours();
@@ -31,6 +31,10 @@ function getCurrentTime(){
     swift="AM";
     if(hh==0){
         hh=12;
+    }
+    else if(hh==12){
+
+        swift="PM";
     }
     else if(hh>12){
         hh-=12;
