@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Track</title>
+    <link rel="shortcut icon" href="./icons/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- order progress bar section start -->
+
+    <div class="orderprogressbar-container">
+        <div class="orderprogressbar-center">
+            <header class="order-header-section wraper">
+                <ul class="order-header left">
+                    <li class="order-header-icon"><img src="./icons/left-arrow.png" alt="left-arrow"></li>
+                    <li class="order-header-title">Order Details</li>
+                </ul>
+                <ul class="order-header right">
+                    <li class="order-header-icon"><img src="./icons/search.png" alt="search"></li>
+                    <li class="order-header-icon"><img src="./icons/cart.png" alt="cart"></li>
+                </ul>
+            </header>
+        </div>
+    </div>
+    <div class="wraper">
+        <div class="order-detials">
+            <p class="order-number">Order ID :<span class="items--same-font-09"> FX-250123-110-12345</span></p>
+            <div class="items-details-info">
+                <div class="items-info">
+                    <h1 class="item-name items--same-font-16">One Plus Buds</h1>
+                    <p class="item-color items--same-font-09">White</p>
+                    <p class="item-seller items--same-font-09">Seller:<span>SuperCom</span></p>
+                    <h1 class="item-cost items--same-font-16">&#8377;4,999</h1>
+                </div>
+                <div class="item-quantity-img">
+                    <div class="item-img-component">
+                        <img src="./asserts/oneplusbuds.jpg" alt="oneplusbuds">
+                    </div>
+                    <p class="item-quantity">Quantity: 1</p>
+                </div>
+            </div>
+        </div>
+        <div class="order-track-section">
+            <h1 class="order-track-heading">Order Track</h1>
+            <p class="order-track-detail">Delivery Excepeted by sat,10th Oct'24</p>
+        </div>
+        <nav class="order-links-status">
+            <ul class="order-links">
+                <li class="order-link">
+                    <img src="./icons/order.png" alt="order" />
+                    <p class="order-link-heading sp-l-left">Order</p>
+                    <div class="circle">
+                        <div class="shade"></div>
+                    </div>
+                </li>
+                <li class="order-link">
+                    <img src="./icons/shipping.png" alt="shipping" />
+                    <p class="order-link-heading sp-ml-left">Shipping</p>
+                    <div class="circle">
+                        <div class="shade"></div>
+                    </div>
+                </li>
+                <li class="order-link">
+                    <img src="./icons/onway.png" alt="onway" />
+                    <p class="order-link-heading">OnWay</p>
+                    <div class="circle">
+                        <div class="shade"></div>
+                    </div>
+                </li>
+                <li class="order-link">
+                    <img src="./icons/doordelivery.png" alt="doordelivery" />
+                    <p class="order-link-heading sp-left">Out Of Order</p>
+                    <div class="circle">
+                        <div class="shade"></div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="order-support-section">
+            <div class="order-bttn">
+                <button type="button" class="red-border">Cancel</button>
+
+            </div>
+            <div class="order-bttn">
+                <button type="button" class="orange-border">Need Help?</button>
+            </div>
+        </div>
+    </div>
+    <footer class="developer-section">
+        <p class="footer-desc wraper">Copyright 2023-<span class="devyear"></span>,Developed By Gullapalli Jyothi Kiran.
+        </p>
+
+    </footer>
+    <!-- order progress bar section start -->
+
+    <!-- Javascript script section start -->
+    <script src="./js/app.js"></script>
+    <!-- Javascript script section end -->
+</body>
+
+</html>

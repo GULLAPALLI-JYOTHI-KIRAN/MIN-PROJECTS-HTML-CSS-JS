@@ -1,0 +1,103 @@
+/*
+* Prefixed by:
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+ 
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+*::-webkit-scrollbar{
+    scrollbar-width: 0;
+}
+.parent{
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 100vh;
+    background: #9CECFB;
+  background: linear-gradient(
+    to right,
+    #9CECFB,#65C7F7,#0052D4
+  );
+    position: relative;
+    overflow: hidden;
+}
+.bubble{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    bottom: -50px;
+    background: #FF4E50;
+  background: linear-gradient(
+    to right,
+    #FF4E50,#F9D423
+  );
+    border-radius:50% ;
+    opacity: 0.7;
+    -webkit-animation: bubble 6s linear 0s infinite;
+            animation: bubble 6s linear 0s infinite;
+}
+ 
+@-webkit-keyframes bubble {
+    0%{
+        -webkit-transform: translateY(0) scale(1);
+                transform: translateY(0) scale(1);
+        opacity: 0.8;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        -webkit-transform: translateY(-100vh) scale(0.3);
+                transform: translateY(-100vh) scale(0.3);
+        opacity: 0;
+    }
+}
+ 
+@keyframes bubble {
+    0%{
+        -webkit-transform: translateY(0) scale(1);
+                transform: translateY(0) scale(1);
+        opacity: 0.8;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        -webkit-transform: translateY(-100vh) scale(0.3);
+                transform: translateY(-100vh) scale(0.3);
+        opacity: 0;
+    }
+}
+.dev-desc{
+    background-color: white;
+    width: auto;
+    margin: 0px auto;
+    border: 5px solid black;
+    color: black;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    padding: 20px;
+    border-radius: 10px;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    line-height: 1.6;
+}

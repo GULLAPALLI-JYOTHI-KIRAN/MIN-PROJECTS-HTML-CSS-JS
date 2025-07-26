@@ -1,0 +1,248 @@
+/*
+* Prefixed by:
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+ 
+:root{
+    font-size: 16px;
+}
+body{
+    background: #EF3B36;  /* fallback for old browsers */  /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-gradient(linear, left top, right top, from(#FFFFFF), to(#EF3B36));
+    background: -o-linear-gradient(left, #FFFFFF, #EF3B36);
+    background: linear-gradient(to right, #FFFFFF, #EF3B36);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ 
+}
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+img{
+    display: block;
+}
+ul{
+    list-style-type: none;
+}
+.wraper{
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.comingasoonpage-container{
+    margin-top: 40px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.comingsoonpage-center{
+    padding: 10px 15px 10px 15px;
+}
+.page-header-section{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    row-gap: 15px;
+}
+.page-heading{
+    font-size: 2.0rem;
+    letter-spacing: 0.6px;
+    text-align: center;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+.page-desc{
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: center;
+    word-spacing: 0rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.page-deadline-section{
+    margin-top: 20px;
+    padding: 10px 10px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 10px 1fr 10px 1fr 10px 1fr;
+    grid-template-columns: repeat(4,1fr);
+    -webkit-column-gap: 10px;
+       -moz-column-gap: 10px;
+            column-gap: 10px;
+   
+}
+.each-deadline{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    row-gap: 20px;
+}
+.deadline-animation{
+    overflow: hidden;
+    padding: 5px;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: white;
+}
+.deadline-indicater{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    max-height: 50px;
+    font-size: 2.3rem;
+    letter-spacing: 0.1px;
+    text-align: center;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+ 
+.deadline-info{
+    text-align: center;
+    font-size: 0.9rem;
+    letter-spacing: 0.1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+input[type="button"]{
+    margin-top: 20px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px 15px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    background-color: coral;
+    color: white;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    outline-offset: 5px;
+    outline: 5px solid white;
+}
+input[type="button"]:active{
+    -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+            transform: scale(0.9);
+}
+.social-links-main{
+    margin: 10px;
+}
+.social-links{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px 0px;
+}
+.social-link{
+    border: 2px solid black;
+    border-radius: 10px;
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+}
+.social-link img{
+    padding: 5px;
+    width: 40px;
+}
+.social-link:hover{
+    -webkit-transform: translateY(-5px);
+        -ms-transform: translateY(-5px);
+            transform: translateY(-5px);
+    border-color: white;
+}
+.developer-desc{
+    margin:15px 0px;
+    text-align: center;
+    font-size: 0.9848491rem;
+    line-height: 1.5;
+    letter-spacing: 0.1rem;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+@media screen and (min-width:768px) {
+    .page-heading{
+        font-size: 2.9rem;
+        font-weight: 500;
+    }
+    .deadline-info{
+        font-size: 1.3rem;
+    }
+    input[type="button"]{
+        padding: 15px;
+    }
+    .social-links-main{
+        margin: 20px;
+    }
+    .social-links{
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-column-gap: 30px;
+           -moz-column-gap: 30px;
+                column-gap: 30px;
+    }
+    .developer-desc{
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+    }
+}

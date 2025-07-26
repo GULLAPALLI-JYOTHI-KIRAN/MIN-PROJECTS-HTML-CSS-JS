@@ -1,0 +1,415 @@
+/*
+* Prefixed by:
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+ 
+:root{
+    font-size: 16px;
+    --white:white;
+    --black:black;
+    --cornflowerblue:cornflowerblue;
+    --gray:gray;
+}
+*,::before,::after{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    display: block;
+}
+.wraper{
+    max-width: 425px;
+    margin-left:auto ;
+    margin-right: auto;
+}
+.section-heading{
+    padding: 20px 10px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 10px 0px;
+}
+.section-heading .heading{
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.9rem;
+    text-align: center;
+}
+[name="close-outline"]{
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    font-size: 2.1rem;
+    border-radius: 30px;
+    -webkit-transition: all 1s linear;
+    -o-transition: all 1s linear;
+    transition: all 1s linear;
+    display: none;
+}
+[name="close-outline"]:hover{
+    cursor: pointer;
+}
+.credit-card-section{
+    height: 370px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    margin-top:30px ;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    padding: 20px 5px 10px 5px;
+    gap: 20px 0px;
+}
+.each-credit-card{
+    border-radius: 10px;
+    padding: 15px 5px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns:1fr;
+    grid-template-columns:repeat(1,1fr);
+    -ms-grid-rows: 30px 10px 50px;
+    grid-template-rows: 30px 50px;
+        grid-template-areas:
+    "a a a"
+    'b c c'
+    'd d d'
+    'e e e'
+    'f f f';
+    gap: 10px 0px;
+    background: cornflowerblue;
+    -webkit-transition: all 1s linear;
+    -o-transition: all 1s linear;
+    transition: all 1s linear;
+}
+.each-credit-card:hover{
+    cursor: pointer;
+}
+.card-title{
+    color: var(--white);
+    grid-area: a;
+    padding: 0px 5px;
+    font-size: 1.2rem;
+    font-variant: small-caps;
+    font-family: "Saira Condensed", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.card-chip-style{
+    width: 50px;
+    background-color: gold;
+    grid-area: b;
+    border: 2px solid var(--white);
+    border-radius: 10px;
+}
+.card-nfc-style{
+    width: 150px;
+    grid-area: c;
+    font-size: 2.6rem;
+    color: var(--white);
+    -webkit-transform: rotateZ(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotateZ(90deg);
+}
+.card-number-container{
+    grid-area: d;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-orient: horizontal;
+   -webkit-box-direction: normal;
+       -ms-flex-direction: row;
+           flex-direction: row;
+   -webkit-box-pack: justify;
+       -ms-flex-pack: justify;
+           justify-content: space-between;
+ 
+}
+.card-number{
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    font-size: 1.4rem;
+    font-family: "Play", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+ 
+.card-expire-date{
+    grid-area: e;
+    text-align: center;
+    font-size: 1.3rem;
+    letter-spacing: 0.1rem;
+    color: var(--white);
+    font-family: "Play", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.card-per-net-details{
+    grid-area: f;
+   display: -ms-grid;
+   display: grid;
+   -ms-grid-columns: 2fr 1fr;
+   grid-template-columns: 2fr 1fr;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
+}
+.customer-name{
+    padding: 0px 8px;
+    letter-spacing: 0.1rem;
+    font-size: 1.2rem;
+    font-variant: small-caps;
+    color: var(--white);
+    font-family: "Gruppo", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.card-network-details{
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.card-network-details-sp{
+    width: 100%;
+}
+.card-network-details-sp .card-network{
+    font-size: 1.1rem;
+    color: var(--white);
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 400;
+}
+.card-network-details-sp .card-network::first-letter{
+    font-size: 1.6rem;
+}
+.card-network-details-sp .card-network-desc{
+    font-size: 1.1rem;
+    color: var(--white);
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+}
+.card-network-details .circle-shade{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.div-one{
+    background:rgb(255, 68, 68);
+}
+.div-two{
+    background:rgb(253, 222, 46);
+    position: relative;
+    top:0px;
+    left: -8px;
+}
+.each-credit-card:nth-child(2){
+    background: lightslategray;
+}
+.each-credit-card:nth-child(3){
+    padding: 9px 5px;
+    background: olivedrab;
+}
+.special-position-one{
+    position: relative;
+    top:-190px;
+    left: 0px;
+}
+.special-position-two{
+    position: relative;
+    top:-410px;
+    left: 0px;
+}
+.footer-section{
+    margin-top: 20px;
+    padding: 20px 5px;
+    background-color: lightslategray;
+}
+.footer-desc{
+    text-align: justify;
+    -moz-text-align-last: center;
+         text-align-last: center;
+    font-size: 1.0rem;
+    line-height: 1.8rem;
+    letter-spacing: 0.1rem;
+    color: var(--white);
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+.transaction-section{
+    margin-top: 30px;
+    padding: 50px 4px;
+    width: 100%;
+    height: 300px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    overflow-y: scroll;
+}
+::-webkit-scrollbar{
+    width: 2px;
+}
+::-webkit-scrollbar-track{
+    background-color: grey;
+}
+::-webkit-scrollbar-thumb{
+    background: var(--white);
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: rgba(128, 128, 128, 0.662);
+}
+.each-transaction{
+    padding: 7px 3px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    gap: 0px 10px;
+}
+.transaction-logo{
+    border-radius: 5px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    font-size: 1.9rem;
+    background-color: antiquewhite;
+}
+.transaction-details{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    row-gap: 3px;
+}
+.transction-name{
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    font-weight: bolder;
+}
+.transction-desc{
+    font-size: 0.8267161rem;
+    font-weight: lighter;
+}
+.transaction-amount-info{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+    row-gap: 3px;
+}
+.transcation-amount{
+    font-size: 1.2rem;
+    font-weight: bolder;
+    text-align: center;
+}
+.transcation-date{
+    font-size: 0.8267161rem;
+    font-weight: lighter;
+    text-align: justify;
+ 
+}
+[name="logo-figma"]{
+    background-color: var(--white);
+    color: darkorange;
+}
+[name="logo-apple"]{
+    background-color: var(--black);
+    color: var(--white);
+}
+[name="logo-microsoft"]{
+    color: var(--gray);
+    background-color: var(--white);
+ 
+}
+[name="logo-linkedin"]{
+    background-color: var(--cornflowerblue);
+    color: var(--white);
+}
+[name="logo-rss"]{
+    background-color: red;
+    color: var(--white);
+}
+[name="logo-tux"]{
+    background-color: var(--white);
+    color: goldenrod;
+}
+[name="logo-paypal"]{
+    background-color: var(--black);
+    color: var(--cornflowerblue);
+}
+[name="logo-twitter"]{
+    background-color: var(--white);
+    color: var(--cornflowerblue);
+}
+[name="logo-bitcoin"]{
+    background-color: var(--white);
+    color: var(--black);
+}
+[name="logo-xbox"]{
+    background-color: var(--black);
+    color: green;
+}
+ 

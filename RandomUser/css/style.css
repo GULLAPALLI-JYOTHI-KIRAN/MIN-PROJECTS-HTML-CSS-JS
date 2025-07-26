@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Lexend:wght@100..900&family=Smooch+Sans:wght@100..900&display=swap');
+:root{
+    font-size: 16px;
+}
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+   
+}
+::-webkit-scrollbar{
+    width: 0%;
+}
+li{
+    list-style-type: none;
+}
+img{
+    display: block;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: #F9E8D9;
+}
+.wraper{
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.random-user-container{
+    width: 100%;
+}
+.random-user-center{
+    width: 100%;
+    padding:0px 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.random-user-title{
+    color: #0C2D57;
+    margin:10px 0px 4px 0px;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: "Lexend", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.underline{
+    width: 50px;
+    height: 5px;
+    margin: auto;
+    border-radius: 5px;
+    background-color:#FD9B63;
+}
+.random-user{
+    background-color: #fff;
+    border-radius: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 60px;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px 3px rgba(68, 68, 68, 0.968);
+}
+.random-user-img-component{
+    width: 100%;
+    height: 120px;
+    background-color: #FF6500;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+.random-user-img-main{
+    width: 140px;
+    height: 140px;
+    border: 5px solid white;
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    border-radius: 50%;
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+}
+.random-user-img-main:hover{
+    box-shadow: 0px 0px 5px 9px black;
+}
+.random-user-img-component img{
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    -o-object-position: center;
+       object-position: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+}
+.random-user-img-component img:hover{
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+}
+.random-user-details-section{
+    background-color: white;
+    padding:10px 10px 20px 10px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    gap: 10px;
+}
+.random-user-info{
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 5px;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+}
+.random-user-question{
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    font-family: "Geist Mono", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+.random-user-answer{
+    letter-spacing: 0.3px;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    font-family: "Smooch Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+.sp-font-size{
+    text-transform: lowercase;
+    font-size: 1rem;
+}
+hr{
+    margin: 7px 0px;
+    border: 1.2px solid black;
+    border-radius: 5px;
+}
+.primary-bttn{
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding:10px 15px;
+    display: block;
+    font-size: 1.4rem;
+    margin:10px auto 20px auto;
+    font-family: "Smooch Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    letter-spacing: 1px;
+    background-color: #FF8225;
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+    color: #F8F4E1;
+}
+.primary-bttn:active{
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+}
+.devloper-desc{
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 1.3;
+    text-transform: capitalize;
+    font-family: "Smooch Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+}
+.display-none{
+    display: none;
+}
+.loader{
+    width: 50px;
+    height: 50px;
+    margin:0px auto 20px auto;
+    border-radius: 50%;
+    border: 5px solid white;
+    border-top: 5px solid rgb(23, 99, 250);
+    box-shadow: 0px 0px 5px 2px black;
+    -webkit-animation: loader-rot 2s linear 0s infinite;
+            animation: loader-rot 2s linear 0s infinite;
+}
+.error-msg{
+    color: red;
+    font-size: 1.4rem;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+@-webkit-keyframes loader-rot {
+    0%{
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(365deg);
+                transform: rotate(365deg);
+    }
+}
+@keyframes loader-rot {
+    0%{
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(365deg);
+                transform: rotate(365deg);
+    }
+}
+@media screen  and (min-width:768px) {
+    .random-user{
+        max-width: 500px;
+        -ms-flex-item-align: center;
+            -ms-grid-row-align: center;
+            align-self: center;
+    }
+    .random-user-question{
+        font-size: 1.1rem;
+    }
+    .random-user-answer{
+        font-size: 1.7rem;
+        font-weight: 550;
+    }
+    .devloper-desc{
+        text-align: center;
+        font-size: 1.6rem;
+    }
+}
+   

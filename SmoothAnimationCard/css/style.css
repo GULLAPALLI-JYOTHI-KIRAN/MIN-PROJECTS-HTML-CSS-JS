@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+:root {
+  font-size: 16px;
+}
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  letter-spacing: 1px;
+}
+body {
+  background-color: #fffdf0;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+}
+li {
+  list-style-type: none;
+}
+.wraper {
+  max-width: 662px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.heading-item {
+  margin-top: 10px;
+  font-size: 1.9rem;
+  text-align: center;
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 2px;
+  text-shadow: 3.2px 0px 1px rgba(0, 0, 0, 0.703);
+}
+.smooth-container {
+  padding: 0px 10px;
+}
+.smooth-card {
+  cursor: pointer;
+  margin: 20px auto;
+  width: 300px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 5px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+.smooth-card img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.smooth-card::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(58, 58, 58, 0.557);
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
+}
+.card-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  text-align: center;
+  display: none;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.card-name {
+  font-size: 1.5rem;
+  margin-bottom: 3px;
+  color: white;
+  -webkit-animation: slide-up 1.3s linear 0s 1;
+  animation: slide-up 1.3s linear 0s 1;
+  -webkit-animation-direction: reverse;
+  animation-direction: reverse;
+  -webkit-transform: translateY(0px);
+  transform: translateY(0px);
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  font-family: "Zilla Slab", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+hr {
+  border: 1.5px solid white;
+  border-radius: 2px;
+  -webkit-animation: slide-left 1.3s linear 0s 1;
+  animation: slide-left 1.3s linear 0s 1;
+  -webkit-animation-direction: reverse;
+  animation-direction: reverse;
+  -webkit-transform: translateY(0px);
+  transform: translateY(0px);
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.card-desc {
+  margin-top: 3px;
+  font-size: 1.2rem;
+  color: white;
+  -webkit-animation: slide-down 1.3s linear 0s 1;
+  animation: slide-down 1.3s linear 0s 1;
+  -webkit-animation-direction: reverse;
+  animation-direction: reverse;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px);
+  font-family: "Zilla Slab", serif;
+  font-weight: 350;
+  font-style: normal;
+}
+@-webkit-keyframes slide-up {
+  0% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+  }
+}
+@keyframes slide-up {
+  0% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+  }
+}
+@-webkit-keyframes slide-down {
+  0% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+  }
+}
+@keyframes slide-down {
+  0% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+  }
+}
+@-webkit-keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+  100% {
+    -webkit-transform: translateX(200px);
+    transform: translateX(200px);
+  }
+}
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+  100% {
+    -webkit-transform: translateX(200px);
+    transform: translateX(200px);
+  }
+}
+.smooth-card:hover > .card-center {
+  display: block;
+}
+.smooth-card:hover > img {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+.card-hover-me {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.card-hover-me button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  padding: 10px 5px;
+  text-align: center;
+  font-size: 1.2rem;
+  border-radius: 3px;
+  border: none;
+  background-color: rgba(58, 58, 58, 0.557);
+  color: white;
+  font-family: "Grechen Fuemen", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.card-hover-me .arrow-down {
+  position: absolute;
+  top: 37%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -37%);
+  transform: translate(-50%, -37%);
+  overflow: hidden;
+}
+.card-hover-me .arrow-up {
+  position: absolute;
+  top: 63%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -63%);
+  transform: translate(-50%, -63%);
+  overflow: hidden;
+}
+.arrow-down span,
+.arrow-up span {
+  display: inline-block;
+  font-size: 1.4rem;
+  color: white;
+}
+.arrow-down .down-one {
+  -webkit-animation: up-down 2s ease-in-out 0s infinite reverse;
+  animation: up-down 2s ease-in-out 0s infinite reverse;
+}
+.arrow-down .down-two {
+  -webkit-animation: up-down 2s ease-in-out 0.1s infinite reverse;
+  animation: up-down 2s ease-in-out 0.1s infinite reverse;
+}
+.arrow-down .down-three {
+  -webkit-animation: up-down 2s ease-in-out 0.2s infinite reverse;
+  animation: up-down 2s ease-in-out 0.2s infinite reverse;
+}
+.arrow-down .down-four {
+  -webkit-animation: up-down 2s ease-in-out 0.4s infinite reverse;
+  animation: up-down 2s ease-in-out 0.4s infinite reverse;
+}
+.arrow-down .down-five {
+  -webkit-animation: up-down 2s ease-in-out 0.5s infinite reverse;
+  animation: up-down 2s ease-in-out 0.5s infinite reverse;
+}
+@-webkit-keyframes up-down {
+  0% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+}
+@keyframes up-down {
+  0% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+}
+ 
+.arrow-up .up-one {
+  -webkit-animation: down-up 2s ease-in-out 0s infinite reverse;
+  animation: down-up 2s ease-in-out 0s infinite reverse;
+}
+.arrow-up .up-two {
+  -webkit-animation: down-up 2s ease-in-out 0.1s infinite reverse;
+  animation: down-up 2s ease-in-out 0.1s infinite reverse;
+}
+.arrow-up .up-three {
+  -webkit-animation: down-up 2s ease-in-out 0.2s infinite reverse;
+  animation: down-up 2s ease-in-out 0.2s infinite reverse;
+}
+.arrow-up .up-four {
+  -webkit-animation: down-up 2s ease-in-out 0.3s infinite reverse;
+  animation: down-up 2s ease-in-out 0.3s infinite reverse;
+}
+.arrow-up .up-five {
+  -webkit-animation: down-up 2s ease-in-out 0.4s infinite reverse;
+  animation: down-up 2s ease-in-out 0.4s infinite reverse;
+}
+@-webkit-keyframes down-up {
+  0% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+}
+@keyframes down-up {
+  0% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+}
+.smooth-card:hover > .card-hover-me {
+  display: none;
+}
+.dev-desc {
+  margin: 10px 0px;
+  padding: 0px 5px;
+  text-align: center;
+  font-size: 1.3rem;
+  line-height: 1.4;
+  font-variant: small-caps;
+  font-family: "Grechen Fuemen", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+ 

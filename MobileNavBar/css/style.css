@@ -1,0 +1,297 @@
+/*
+* Prefixed by:
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+ 
+:root{
+    font-size: 16px;
+}
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+ul{
+    list-style-type: none;
+}
+img{
+    display: block;
+}
+a{
+    text-decoration: none;
+}
+body{
+    position: relative;
+}
+.heading-section{
+    width: 100%;
+    padding: 30px 5px;
+    background-color: rgb(48, 48, 48);
+}
+.heading{
+    font-family: "Workbench", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "BLED" 0,
+        "SCAN" 0;
+    text-align: center;
+    font-size: 1.9rem;
+    color: #Fff;
+    letter-spacing: 0.1rem;
+}
+.nav-bar-container{
+    z-index: 10;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgb(48, 48, 48);
+   
+}
+.main-navbar{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack:space-evenly;
+        -ms-flex-pack:space-evenly;
+            justify-content:space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding:10px 5px 0px 5px;
+    overflow: hidden;
+ 
+}
+ 
+.navbar-links a{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow: hidden;
+}
+.navbar-links a .icon{
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
+    color: white;
+    -webkit-transition:all .2s linear;
+    -o-transition:all .2s linear;
+    transition:all .2s linear;  
+}
+ 
+.navbar-links:hover .icon{
+    -webkit-transform: translateY(-90px);
+        -ms-transform: translateY(-90px);
+            transform: translateY(-90px);
+}
+.navbar-links a .navbar-link-text{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: 0.01rem;
+    opacity: 0;
+    -webkit-transform: translateY(40px);
+        -ms-transform: translateY(40px);
+            transform: translateY(40px);
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+    color: white;
+}
+.navbar-links:hover .navbar-link-text{
+    opacity: 1;
+    -webkit-transform: translateY(-25px);
+        -ms-transform: translateY(-25px);
+            transform: translateY(-25px);
+}
+ 
+.page-container{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 130%;
+    left: 0px;
+}
+.page-section{
+    padding: 20px 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+}
+.each-page{
+    padding: 20px;
+    width: 250px;
+    height: 200px;
+    cursor: pointer;
+    border-radius: 36px 36px 36px 36px;
+    -webkit-border-radius: 36px 36px 36px 36px;
+    -moz-border-radius: 36px 36px 36px 36px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 16px;
+    background: #FF9800;
+    padding: 15px 0px;
+    -webkit-transition: all 1s linear;
+    -o-transition: all 1s linear;
+    transition: all 1s linear;
+}
+#green{
+    background: #2C7865;
+   
+}
+#sky-blue{
+    background: #40A2E3;
+   
+}
+#brown{
+    background: #561C24;
+   
+}
+#light-purple{
+    background: #BC7FCD;
+ 
+}
+#maroon{
+    background: #79155B;
+}
+.each-page:hover{
+    background: #2e2e2e;
+    box-shadow: 0px 0px 14px 2px rgba(0,0,0,0.44);
+    -webkit-box-shadow: 0px 0px 14px 2px rgba(0,0,0,0.44);
+    -moz-box-shadow: 0px 0px 14px 2px rgba(0,0,0,0.44);
+    -webkit-animation: swap-anime 1s linear 0s 1 normal;
+            animation: swap-anime 1s linear 0s 1 normal;
+}
+ 
+@-webkit-keyframes swap-anime {
+    0%{
+        -webkit-transform: rotateY(0deg);
+                transform: rotateY(0deg);
+    }
+    25%{
+        -webkit-transform: rotateY(45deg);
+                transform: rotateY(45deg);
+ 
+    }
+    50%{
+        -webkit-transform: rotateY(90deg);
+                transform: rotateY(90deg);
+    }
+    75%{
+        -webkit-transform: rotateY(135deg);
+                transform: rotateY(135deg);
+       
+    }
+    100%{
+        -webkit-transform: rotateY(180deg);
+                transform: rotateY(180deg);
+       
+    }
+}
+ 
+@keyframes swap-anime {
+    0%{
+        -webkit-transform: rotateY(0deg);
+                transform: rotateY(0deg);
+    }
+    25%{
+        -webkit-transform: rotateY(45deg);
+                transform: rotateY(45deg);
+ 
+    }
+    50%{
+        -webkit-transform: rotateY(90deg);
+                transform: rotateY(90deg);
+    }
+    75%{
+        -webkit-transform: rotateY(135deg);
+                transform: rotateY(135deg);
+       
+    }
+    100%{
+        -webkit-transform: rotateY(180deg);
+                transform: rotateY(180deg);
+       
+    }
+}
+.each-page:nth-child(2){
+    display: none;
+}
+.each-page:nth-child(3){
+    display: none;
+}
+.each-page:nth-child(4){
+    display: none;
+}
+.each-page:nth-child(5){
+    display: none;
+}
+.img-component{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+ 
+}
+.img-component .icon{
+    width:100%;
+    height: 100%;
+    color: #f6f3f1;
+    -webkit-transition: all 1s linear;
+    -o-transition: all 1s linear;
+    transition: all 1s linear;
+}
+.each-page:hover .icon{
+    color: #15F5BA;
+}
+.page-title{
+    font-family: "Protest Revolution", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 1.4rem;
+    color: #Fff;
+}
+@media screen and (max-height: 420px) {
+ 
+    .nav-bar-container{
+        position: -webkit-sticky;
+        position: sticky;
+    }
+}
+ 
+@media screen and (min-width: 768px) {
+    .wraper{
+        max-width: 400px;
+        min-height: 200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .heading{
+        font-size: 2.9rem;
+    }
+}

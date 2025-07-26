@@ -1,0 +1,537 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body {
+    padding: 0px 10px;
+    background-color: #F9EFDB;
+    position: relative;
+}
+
+img {
+    display: block;
+}
+
+:root {
+    font-size: 16px !important;
+}
+
+.heading-container {
+    width: 100%;
+}
+
+.title {
+    margin: 20px;
+    text-align: center;
+    word-spacing: 0.2rem;
+    font-size: 1.8rem;
+    font-family: 'Oswald', sans-serif;
+    font-variant: small-caps;
+    color: #6B240C;
+    position: relative;
+    top: -100px;
+}
+
+.title::first-letter,
+span {
+    font-size: 3.5rem;
+
+}
+
+.developer-desc {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 100%;
+    font-size: 1.5022010rem;
+    float: left;
+    text-align: center;
+    font-variant: small-caps;
+    letter-spacing: 0.1rem;
+    padding: 20px;
+    line-height: 1.2;
+    background: #6C5F5B;
+    color: white;
+    font-family: 'Protest Revolution', sans-serif;
+    -webkit-box-shadow: 0px 3px 15px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 3px 15px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sleep-me {
+    -webkit-animation-name: sleep-me-none;
+            animation-name: sleep-me-none;
+    -webkit-animation-duration: 5.1s;
+            animation-duration: 5.1s;
+    -webkit-animation-delay: 4.62s;
+            animation-delay: 4.62s;
+    -webkit-animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes sleep-me-none{
+
+    0% {
+        display: none;
+
+    }
+
+    100% {
+        display: none;
+    }
+}
+
+@keyframes sleep-me-none{
+
+    0% {
+        display: none;
+
+    }
+
+    100% {
+        display: none;
+    }
+}
+
+.developer-name {
+    font-size: 1.4rem !important;
+    clear: both;
+}
+
+.desc {
+    position: relative;
+    top: -1000px;
+    width: 100%;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 200;
+    letter-spacing: 0.1rem;
+    text-transform: capitalize;
+    font-family: 'Single Day', cursive;
+}
+
+.comeFromTop {
+    -webkit-animation-name: come-from-top;
+            animation-name: come-from-top;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-delay: 1.32s;
+            animation-delay: 1.32s;
+    -webkit-animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+}
+
+.nextcomedelay {
+    -webkit-animation-delay: 2.9s;
+            animation-delay: 2.9s;
+}
+
+@-webkit-keyframes come-from-top {
+    0% {
+        position: relative;
+        top: -50px;
+    }
+
+    100% {
+
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+}
+
+@keyframes come-from-top {
+    0% {
+        position: relative;
+        top: -50px;
+    }
+
+    100% {
+
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+}
+
+.wraper {
+    max-width: 1020px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hover-images-container {
+    max-width: 320px;
+    min-height: 500px;
+    margin: 30px auto;
+    padding: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-column-gap: 10px;
+       -moz-column-gap: 10px;
+            column-gap: 10px;
+    row-gap: 30px;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 10px;
+    background: rgba(41, 41, 41, 0.815);
+    position: relative;
+    bottom: -2000px;
+    overflow: auto;
+}
+
+.slidefromright {
+    -webkit-animation-name: slide-from-right;
+            animation-name: slide-from-right;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+    -webkit-animation-delay: 4.3s;
+            animation-delay: 4.3s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+
+}
+
+@-webkit-keyframes slide-from-right {
+    0% {
+        position: relative;
+        bottom: -1000px;
+    }
+
+    10% {
+        position: relative;
+        bottom: -900px;
+    }
+
+    20% {
+        position: relative;
+        bottom: -800px;
+    }
+
+    30% {
+        position: relative;
+        bottom: -700px;
+    }
+
+    40% {
+        position: relative;
+        bottom: -600px;
+    }
+
+    50% {
+        position: relative;
+        bottom: -500px;
+    }
+
+    60% {
+        position: relative;
+        bottom: -400px;
+    }
+
+    70% {
+        position: relative;
+        bottom: -300px;
+    }
+
+    75% {
+        position: relative;
+        bottom: -190px;
+    }
+
+    80% {
+        position: relative;
+        bottom: -150px;
+    }
+
+    85% {
+        position: relative;
+        bottom: -75px;
+    }
+
+    90% {
+        position: relative;
+        bottom: -25px;
+    }
+
+    100% {
+        position: relative;
+        left: 0px;
+        right: 0px;
+        top: 0px;
+        bottom: 0px;
+    }
+}
+
+@keyframes slide-from-right {
+    0% {
+        position: relative;
+        bottom: -1000px;
+    }
+
+    10% {
+        position: relative;
+        bottom: -900px;
+    }
+
+    20% {
+        position: relative;
+        bottom: -800px;
+    }
+
+    30% {
+        position: relative;
+        bottom: -700px;
+    }
+
+    40% {
+        position: relative;
+        bottom: -600px;
+    }
+
+    50% {
+        position: relative;
+        bottom: -500px;
+    }
+
+    60% {
+        position: relative;
+        bottom: -400px;
+    }
+
+    70% {
+        position: relative;
+        bottom: -300px;
+    }
+
+    75% {
+        position: relative;
+        bottom: -190px;
+    }
+
+    80% {
+        position: relative;
+        bottom: -150px;
+    }
+
+    85% {
+        position: relative;
+        bottom: -75px;
+    }
+
+    90% {
+        position: relative;
+        bottom: -25px;
+    }
+
+    100% {
+        position: relative;
+        left: 0px;
+        right: 0px;
+        top: 0px;
+        bottom: 0px;
+    }
+}
+
+.image-component {
+    width: 90px;
+    height: 300px;
+    border-radius: 20px;
+    border: 3px solid white;
+    -webkit-transition: all 1s linear;
+    -o-transition: all 1s linear;
+    transition: all 1s linear;
+    cursor: -webkit-grab;
+    cursor: grab;
+    position: relative;
+    top: -2000px;
+
+}
+
+.comefromside {
+    -webkit-animation-name: come-from-side;
+            animation-name: come-from-side;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+    -webkit-animation-delay: 8.3s;
+            animation-delay: 8.3s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes come-from-side {
+    0% {
+        position: relative;
+        top: -100px;
+    }
+
+    100% {
+        position: relative;
+        -webkit-transition: top linear 2s;
+        -o-transition: top linear 2s;
+        transition: top linear 2s;
+        top: 0px;
+        left: 0px;
+
+    }
+}
+
+@keyframes come-from-side {
+    0% {
+        position: relative;
+        top: -100px;
+    }
+
+    100% {
+        position: relative;
+        -webkit-transition: top linear 2s;
+        -o-transition: top linear 2s;
+        transition: top linear 2s;
+        top: 0px;
+        left: 0px;
+
+    }
+}
+
+.two-late {
+    -webkit-animation-delay: 13.3s;
+            animation-delay: 13.3s;
+}
+
+.three-late {
+    -webkit-animation-delay: 15.3s;
+            animation-delay: 15.3s;
+}
+
+.four-late {
+    -webkit-animation-delay: 19.3s;
+            animation-delay: 19.3s;
+}
+
+.image-component:last-child,
+.image-component:first-child {
+    width: 250px;
+    height: 85px;
+    border-radius: 20px;
+}
+
+.image-component:nth-child(2),
+.image-component:nth-child(3) {
+    width: 90px;
+    height: 300px;
+    margin: auto;
+}
+
+.image-component img {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    
+
+}
+
+.image-component:hover {
+    width: 100%;
+    height: 300px;
+    border: none;
+    -webkit-box-shadow: rgba(222, 220, 220, 0.24) 0px 3px 15px;
+            box-shadow: rgba(222, 220, 220, 0.24) 0px 3px 15px;
+}
+
+
+
+@media screen and (min-width: 375px) {
+    .hover-images-container {
+        margin-top: 40px;
+    }
+
+    .image-component:last-child,
+    .image-component:first-child {
+        width: 300px;
+        height: 85px;
+        border-radius: 20px;
+    }
+
+
+    .image-component:hover {
+        width: 250px;
+        height: 300px;
+
+    }
+
+}
+
+@media screen and (min-width: 1020px) {
+    .title {
+        margin: 30px;
+    }
+
+    .hover-images-container {
+        min-width: 920px;
+        margin-top: 40px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-column-gap: 20px;
+           -moz-column-gap: 20px;
+                column-gap: 20px;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
+
+    .image-component {
+        width: 90px !important;
+        height: 300px !important;
+        margin: 0 !important;
+    }
+
+    .image-component:hover {
+        width: 250px !important;
+        height: 300px !important;
+
+    }
+
+}
